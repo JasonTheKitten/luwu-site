@@ -8,10 +8,14 @@
       </div>
       <img src="images/luwu4.png" alt="Luwu!" class="profile"/>
       <div class="buttons">
-        <PillButton content="Discord" class="add-button discord"/><br/>
+        <a href="https://discord.com/oauth2/authorize?client_id=661817513247768588&scope=bot&permissions=338816087">
+          <PillButton content="Discord" class="add-button discord"/>
+        </a><br/>
         <PillButton content="Coming Soon!" class="add-button nertivia"/>
       </div>
-      <PillButton content="Read More!" class="readmore"/>
+      <a href="#categories">
+        <PillButton content="Read More!" class="readmore"/>
+      </a>
     </div>
   </div>
 </template>
@@ -84,5 +88,8 @@
     font-family: "Open Sans";
     margin-bottom: 20px;
   }
-
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 </style>

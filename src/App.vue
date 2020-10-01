@@ -41,6 +41,9 @@ export default {
     html {
         background-color: var(--background);
     }
+    .mainview {
+        scroll-behavior: smooth;
+    }
     @font-face {
         font-family: "Arial Rounded MT Bold";
         src: url("/fonts/armtb.ttf") format("truetype");

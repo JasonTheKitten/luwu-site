@@ -2,7 +2,7 @@
     <div class="header">
         <a href="/"><PillButton class="pill" content="Luwu!"/></a>
         <a class="header-link" href="https://discord.gg/q2Uuwqy">Server</a>
-        <a class="header-link">Privacy Policy</a>
+        <a class="header-link" href="/privacy.html">Privacy Policy</a>
     </div>
 </template>
 
