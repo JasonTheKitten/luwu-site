@@ -8,7 +8,7 @@
       </div>
       <img src="images/luwu4.png" alt="Luwu!" class="profile"/>
       <div class="buttons">
-        <a href="https://discord.com/oauth2/authorize?client_id=661817513247768588&scope=bot&permissions=338816087">
+        <a href="https://discord.com/oauth2/authorize?client_id=675003186402295847&scope=bot%20applications.commands&permissions=338816087">
           <PillButton content="Discord" class="add-button discord"/>
         </a><br/>
         <PillButton content="Coming Soon!" class="add-button nertivia"/>
