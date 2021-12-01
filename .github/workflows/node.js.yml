@@ -1,0 +1,29 @@
+name: Converted Workflow
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  Build:
+    runs-on: '${{ matrix.os }}'
+    strategy:
+      matrix:
+        os:
+          - ubuntu-18.04
+        node-version:
+          - 12.x
+    steps:
+      - name: 'Set up Node.js ${{ matrix.node-version }}'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '${{ matrix.node-version }}'
+      - uses: actions/checkout@v2
+      - run: npm install -g firebase-tools
+      - run: npm install -g @vue/cli
+      - run: npm install -g @vue/cli-service
+      - run: npm install
+      - run: npm run build
+      - run: firebase deploy --token $FIREBASE_TOKEN --project luwusite
